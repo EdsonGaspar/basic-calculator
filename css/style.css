@@ -1,3 +1,82 @@
-.black{
-    color: black;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+   
+}
+body{
+    font-family: sans-serif;
+    background-color: #1f1f1f;
+    font-size: 1.6rem;
+}
+i, p{
+    color: white;
+    cursor: pointer;
+}
+.calculadora{
+    width: 35rem;
+    margin: 6rem auto 0;
+    border: 1px solid rgba(255, 255, 255, 0.082);
+    border-radius: 1.5rem;
+}
+.conatiner{
+    width: 35rem;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0 2rem 0;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.settings-sizi{
+    font-size: 2.2rem;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 8rem 0;
+    }
+.input-text{
+    font-size: 2rem;
+    width: 100%;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    height: 4rem;
+    outline: none;
+    border: none;
+    text-align: right;
+
+}
+/*Codificando os Buttons*/
+.orange{
+    color: #ed5f0d;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+button{
+    height: 3.3rem;
+    font-size: 1.8rem;
+    background-color: #1d1d1d;
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #2e2e2e;
+    transition: .5s;
 }
