@@ -22,32 +22,34 @@
                 </div>
             </div>
             <div class="input">
-                <input type="text" class="input-text">
+                <input type="text" class="input-text" id="enter" disabled>
             </div>
         </div>
         <div id="buttons">
-            <button class="orange">AC</button>
+            <button class="orange" onclick="clearDisplay()">AC</button>
             
-            <button><i class="ri-delete-back-2-line orange"></i></button>
+            <button onclick="deleteLast()"><i class="ri-delete-back-2-line orange"></i></button>
             <button class="orange">+/-</button>
-            <button class="orange">/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="orange">X</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="orange">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="orange">+</button>
-            <button class="orange">%</button>
-            <button>0</button>
-            <button class="orange">.</button>
-            <button class="orange">=</button>
+            <button class="orange" onclick="appendOperaitor('/')">/</button>
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button class="orange" onclick="appendOperaitor('*')">X</button>
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button class="orange" onclick="appendOperaitor('-')">-</button>
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button class="orange" onclick="appendOperaitor('+')">+</button>
+            <button class="orange" onclick="appendOperaitor('%')">%</button>
+            <button onclick="appendNumber(0)">0</button>
+            <button class="orange" onclick="appendNumber('.')">.</button>
+            <button class="orange" onclick="calculate()">=</button>
         </div>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
